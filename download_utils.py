@@ -109,6 +109,11 @@ def down_fr_url(urls: list, save_dir: str='', unzip: bool=False):
             print(e)
     print('Done.')
 
+    if os.path.exists(save_path) and
+    os.path.getsize(save_path)>=retri_file_size (url):
+        print('{} already exists dev.'.format(save_path))
+        continue
+
 
 if __name__ == '__main__':
     test = 'funny'
